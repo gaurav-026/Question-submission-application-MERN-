@@ -10,7 +10,7 @@ function AppContextProvider({ children }) {
     const [fetchedData, setFetchedData] = useState([]);
     //Fetch All the DAta from the database
     const fetchTasks = async () => {
-        const response = await fetch(`http://localhost:4000/api/v1/getResponse`,
+        const response = await fetch(`https://question-submission-application-mern.onrender.com/api/v1/getResponse`,
             {
                 method: "GET",
                 headers: {

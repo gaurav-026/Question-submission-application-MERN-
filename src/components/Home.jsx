@@ -85,7 +85,7 @@ const Home = () => {
     //save in object form aur pass kr do 
     const object = { formData };
     // console.log(object);
-    const response = await fetch(`http://localhost:4000/api/v1/postResponses`,
+    const response = await fetch(`https://question-submission-application-mern.onrender.com/api/v1/postResponses`,
       {
         method: "POST",
         headers: {
