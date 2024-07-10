@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -8,8 +9,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand href="/">Submission App</Navbar.Brand>
                     <Nav className="me-auto">
-                        {/* <Nav.Link href="#home">Home</Nav.Link> */}
-                        <Nav.Link href="/submissions">Analysis</Nav.Link>
+                        <NavLink to="/submissions" style={{textDecoration:"none", color:"white"}}>Analysis</NavLink>
                     </Nav>
                 </Container>
             </Navbar>
